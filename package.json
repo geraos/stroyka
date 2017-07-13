@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-htmlincluder": "^0.1.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-less": "^3.3.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0"
+  }
+}
