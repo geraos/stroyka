@@ -50,13 +50,13 @@ gulp.task('move', function(){
 gulp.task('sprite', function(){
     var sprite = gulp.src('dev/assets/img/sprite/*.*')
         .pipe(spritesmith({
-            imgName: 'sprite.png',
+            imgName: '../img/sprite.png',
             cssName: '_sprite.less',
             padding: 5,
             algorithm: 'binary-tree'
         }));
 
-        sprite.img.pipe(gulp.dest('build/assets/img'));
+        sprite.img.pipe(gulp.dest('build/img'));
         sprite.css.pipe(gulp.dest('dev/assets/less/includes'));
 })
 
