@@ -1,0 +1,30 @@
+.grid(@name, @i: 1) when (@i =< @column-count) {
+  .@{name}@{i} {
+    width: @i * (100% / @column-count);
+  }
+
+  .grid(@name, @i + 1);
+}
+
+.row:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.grid(sx);
+@media screen and (min-width: @width-sm){
+    .grid(sm);
+}
+@media screen and (min-width: @width-mid){
+    .grid(md);
+}
+@media screen and (min-width: @width-max){
+    .grid(lg);
+}
