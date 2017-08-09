@@ -3,3 +3,15 @@
 @import "includes/_mixins";
 @import "includes/_icons";
 @import "includes/_grid";
+
+html{
+    font-family: @font-regular, sans-serif;
+    font-size: @font-size-base;
+}
+
+.container{
+    max-width: @width-max;
+    margin: 0 auto;
+}
+
+@import "../../components/section/_style";

@@ -28,3 +28,27 @@
 @media screen and (min-width: @width-max){
     .grid(lg);
 }
+
+.hide{
+    display: none;
+    &-sx{
+        @media screen and (max-width: @width-sm){
+            display: none;
+        }
+    }
+    &-sm{
+        @media screen and (min-width: @width-sm) and (max-width: @width-mid){
+            display: none;
+        }
+    }
+    &-md{
+        @media screen and (min-width: @width-mid) and (max-width: @width-max){
+            display: none;
+        }
+    }
+    &-lg{
+        @media screen and (min-width: @width-max){
+            display: none;
+        }
+    }
+}
