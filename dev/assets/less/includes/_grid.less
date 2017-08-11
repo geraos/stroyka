@@ -1,9 +1,10 @@
-.grid(@name, @i: 1) when (@i =< @column-count) {
+.grid(@name, @pad, @i: 1) when (@i =< @column-count) {
   .@{name}@{i} {
     width: @i * (100% / @column-count);
+    padding: 0 @pad;
   }
 
-  .grid(@name, @i + 1);
+  .grid(@name, @pad, @i + 1);
 }
 
 .row:after{
@@ -18,15 +19,15 @@
     box-sizing: border-box;
 }
 
-.grid(sx);
+.grid(sx, 5px);
 @media screen and (min-width: @width-sm){
-    .grid(sm);
+    .grid(sm, 5px);
 }
 @media screen and (min-width: @width-mid){
-    .grid(md);
+    .grid(md, 10px);
 }
 @media screen and (min-width: @width-max){
-    .grid(lg);
+    .grid(lg,15px);
 }
 
 .hide{

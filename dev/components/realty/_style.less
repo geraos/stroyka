@@ -1,0 +1,35 @@
+.realty{
+    .col{
+        padding: 0;
+    }
+    .btn{
+        width: 100%;
+    }
+    &-cover{
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+        @media screen and (min-width: @width-sm){
+            height: 210px;
+        }
+        @media screen and (min-width: @width-mid){
+            height: 266px;
+        }
+    }
+    &-info{
+        text-align: center;
+        &-wrap{
+            @media screen and (min-width: @width-sm){
+                height: 210px;
+                overflow: hidden;
+            }
+            @media screen and (min-width: @width-mid){
+                height: 175px;
+            }
+        }
+    }
+    &-descr{
+        text-align: justify;
+    }
+}
