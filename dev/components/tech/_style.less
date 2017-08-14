@@ -1,0 +1,35 @@
+.item{
+    margin-bottom: 20px;
+    &-title{
+        font-size: 36/16rem;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    &-cover{
+        @media screen and (min-width: @width-sm){
+            float: left;
+            width: 31%;
+            margin: 0 20px 20px 0;
+        }
+         @media screen and (min-width: @width-mid){
+            margin: 0 30px 30px 0;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &-content{
+
+    }
+    &:nth-child(even){
+        .item-cover{
+            @media screen and (min-width: @width-sm){
+                float: right;
+                margin: 0 0 20px 20px;
+            }
+             @media screen and (min-width: @width-mid){
+                margin: 0 0 30px 30px;
+            }
+        }
+    }
+}
